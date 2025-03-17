@@ -13,7 +13,7 @@ export const RockList = ({ rocks, fetchRocks }) => {
           className="border p-5 border-solid hover:bg-fuchsia-500 hover:text-violet-50 rounded-md border-violet-900 mt-5 bg-slate-50"
         >
           {rock.name} ({rock.type.label}) weighs {rock.weight} kg in the
-          colloection of {rock.user.first_name} {rock.user.last_name}
+          colloection of {rock.user?.first_name} {rock.user?.last_name}
         </div>
       ));
     }
